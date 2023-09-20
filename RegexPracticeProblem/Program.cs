@@ -12,7 +12,7 @@ namespace RegexPracticeProblem
         {
             Console.WriteLine("Hello World");
             Console.WriteLine("Choose any program");
-            Console.WriteLine("1.FirstNameValidation\n2.LastNameValidation\n3.EmailValidation");
+            Console.WriteLine("1.FirstNameValidation\n2.LastNameValidation\n3.EmailValidation\n4.PreDefinedMobileFormat");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -25,6 +25,9 @@ namespace RegexPracticeProblem
                     break;
                 case 3:
                     RegexValidation.EmailValidation();
+                    break;
+                case 4:
+                    RegexValidation.MobileFormat();
                     break;
             }
            

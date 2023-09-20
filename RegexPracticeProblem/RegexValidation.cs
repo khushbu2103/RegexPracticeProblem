@@ -52,6 +52,20 @@ namespace RegexPracticeProblem
                     Console.WriteLine("{0} is Invalid", input);
             }
         }
+        public static void MobileFormat()
+        {
+            string pattern = "^[0-9]{2}[ ][0-9]{10}$";
+            string[] inputs = {"91 94609848834"};
+
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, pattern))
+                    Console.WriteLine("{0} is Valid", input);
+
+                else
+                    Console.WriteLine("{0} is Invalid", input);
+            }
+        }
 
     }
 }
