@@ -66,6 +66,19 @@ namespace RegexPracticeProblem
                     Console.WriteLine("{0} is Invalid", input);
             }
         }
+        public static void PreDefinedPasswordRule1Min8Digit()
+        {
+            string pattern = "^[0-9]{8,}$";
+            string[] inputs = { "1234567", "123as", "123456789" };
 
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, pattern))
+                    Console.WriteLine("{0} is Valid", input);
+
+                else
+                    Console.WriteLine("{0} is Invalid", input);
+            }
+        }
     }
 }
