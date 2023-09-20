@@ -37,6 +37,21 @@ namespace RegexPracticeProblem
                     Console.WriteLine("{0} is Invalid", input);
             }
         }
+        public static void EmailValidation()
+        {
+            //string pattern = "^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,63}$";
+            string pattern = "^abc\\.[a-zA-Z]+@bl\\.co\\.[a-z]{2}$";
+            string[] inputs = { "abc.xiz@bl.co.im"};
+
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, pattern))
+                    Console.WriteLine("{0} is Valid", input);
+
+                else
+                    Console.WriteLine("{0} is Invalid", input);
+            }
+        }
 
     }
 }
