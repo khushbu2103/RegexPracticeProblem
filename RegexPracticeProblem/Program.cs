@@ -10,6 +10,9 @@ namespace RegexPracticeProblem
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
+            RegexValidation.FirstNameValidation();
+            Console.ReadLine();
         }
     }
 }
