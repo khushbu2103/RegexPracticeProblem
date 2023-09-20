@@ -11,7 +11,20 @@ namespace RegexPracticeProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World");
-            RegexValidation.FirstNameValidation();
+            Console.WriteLine("Choose any program");
+            Console.WriteLine("1.FirstNameValidation\n2.LastNameValidation");
+            int option = Convert.ToInt32(Console.ReadLine());
+            switch(option)
+            {
+                case 1:
+                    RegexValidation.FirstNameValidation();
+                    break;
+
+                case 2:
+                    RegexValidation.LastNameValidation();
+                    break;
+            }
+           
             Console.ReadLine();
         }
     }

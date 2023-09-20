@@ -23,5 +23,20 @@ namespace RegexPracticeProblem
                    Console.WriteLine("{0} is Invalid", input);
             }
         }
+        public static void LastNameValidation()
+        {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            string[] inputs = { "Soni", "soni", "so" };
+
+            foreach (string input in inputs)
+            {
+                if (Regex.IsMatch(input, pattern))
+                    Console.WriteLine("{0} is Valid", input);
+
+                else
+                    Console.WriteLine("{0} is Invalid", input);
+            }
+        }
+
     }
 }
